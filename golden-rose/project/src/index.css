@@ -1,0 +1,26 @@
+/* COLORS */
+:root {
+  --black: #080808;
+  --black-90: #212121;
+  --black-80: #393939;
+  --black-70: #535353;
+  --white: #ffffff;
+  --dark-gold: #ada071;
+  --darker-gold: #877c52;
+  --gold-100: #c6b780;
+  --gold-70: #d8cda7;
+  --gold-40: #e8e2cc;
+  --gold-10: #faf8f3;
+}
+
+/* GLOBAL STYLE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+body {
+  background-color: var(--black);
+}
