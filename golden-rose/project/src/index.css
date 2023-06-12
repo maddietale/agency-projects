@@ -1,3 +1,9 @@
+/* FONTS */
+@font-face {
+  font-family: "Jalal";
+  src: url("./Font//JalalSly-1.0.woff");
+}
+
 /* COLORS */
 :root {
   --black: #080808;
@@ -17,10 +23,56 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   direction: rtl;
+  font-family: "Jalal";
+  box-sizing: border-box;
 }
 
 body {
+  color: var(--white);
   background-color: var(--black);
+}
+
+h1 {
+  font-size: 2.125rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 0.875rem;
+  color: var(--white);
+  text-decoration: none;
 }

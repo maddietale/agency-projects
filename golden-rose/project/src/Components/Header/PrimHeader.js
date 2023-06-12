@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 // STYLE
 import Style from "./Header.module.css";
+import { FlexWrapper, FlexLink } from "../StyledComponent";
 // IMG
 import Logo from "../../Images/Header/Logo.svg";
 import Arrow from "../../Images/Header/Arrow.svg";
@@ -8,32 +9,46 @@ import Search from "../../Images/Header/Search.svg";
 import Devider from "../../Images/Header/Devider.svg";
 import User from "../../Images/Header/User.svg";
 import Basket from "../../Images/Header/Basket.svg";
+import ArrowHover from "../../Images/Header/ArrowHover.svg";
+import SearchHover from "../../Images/Header/SearchHover.svg";
+import UserHover from "../../Images/Header/UserHover.svg";
+import BasketHover from "../../Images/Header/BasketHover.svg";
 
 const PrimHeader = () => {
+
+    // STATES
+    const [isSearch, setIsSearch] = useState(false);
+    const [isBasket, setIsBasket] = useState(false);
+    const [isArrow, setIsArrow] = useState(false);
+    const [isUser, setIsUser] = useState(false);
+
     return (
-        <div className={Style.primContainer}>
-            <div className={Style.rightBox}>
-                <img className={Style.logo} src={Logo} alt="Gold Rose Logo" />
+        <FlexWrapper justifyContent={"space-around"} className={Style.primContainer}>
+            <div>
+                <img src={Logo} alt="Gold Rose Logo" />
             </div>
 
-            <ul className={Style.navigation}>
-                <li className={Style.navigation__item}>دسته‌بندی‌ها <img src={Arrow} alt="Arrow"/> </li>
-                <li className={Style.navigation__item}>وبلاگ</li>
-                <li className={Style.navigation__item}>گالری</li>
-                <li className={Style.navigation__item}>درباره رز طلایی</li>
-                <li className={Style.navigation__item}>ارتباط با ما</li>
-            </ul>
+            <FlexWrapper gapSize={"32px"}>
+                <FlexLink onMouseEnter={() => setIsArrow(true)} onMouseLeave={() => setIsArrow(false)} url={"/"} gapSize={"8px"}>
+                    دسته‌بندی‌ها
+                    <img src={isArrow ? (ArrowHover) : (Arrow)} alt="Arrow" />
+                </FlexLink>
+                <a href="/">وبلاگ</a>
+                <a href="/">گالری</a>
+                <a href="/">درباره رز طلایی</a>
+                <a href="/">ارتباط با ما</a>
+            </FlexWrapper>
 
-            <div className={Style.leftBox}>
-                <img className={Style.search} src={Search} alt="Search"/>
-                <img src={Devider} alt="Devider"/>
-                <div className={Style.account}>
-                    <span>حساب کاربری</span>
-                    <img src={User} alt="User"/>
-                </div>
-                <img className={Style.basket} src={Basket} alt="Basket"/>
-            </div>
-        </div>
+            <FlexWrapper gapSize={"16px"}>
+                <img src={isSearch ? (SearchHover) : (Search)} onMouseEnter={() => setIsSearch(true)} onMouseLeave={() => setIsSearch(false)} alt="Search" />
+                <img src={Devider} alt="Devider" />
+                <FlexLink onMouseEnter={() => setIsUser(true)} onMouseLeave={() => setIsUser(false)} url={"/"} gapSize={"8px"}>
+                    حساب کاربری
+                    <img src={isUser ? (UserHover) : (User)} alt="User" />
+                </FlexLink>
+                <img src={isBasket ? (BasketHover) : (Basket)} onMouseEnter={() => setIsBasket(true)} onMouseLeave={() => setIsBasket(false)} alt="Basket" />
+            </FlexWrapper>
+        </FlexWrapper>
     );
 };
 
