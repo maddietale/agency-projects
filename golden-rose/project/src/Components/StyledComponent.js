@@ -9,7 +9,8 @@ justify-content: ${props => props.justifyContent || ""};
 `;
 
 export const FlexLink = styled.a.attrs(props => ({
-    href: props.url || "/",
+  href: props.url || "/",
+  onClick: e => e.preventDefault(),
 }))`
 display: flex;
 color: var(--white);
@@ -22,4 +23,20 @@ justify-content: ${props => props.justifyContent || ""};
 &:hover {
   color: var(--gold-100);
 }
+`;
+
+export const CustomLink = styled.a.attrs(props => ({
+  href: props.url || "/",
+  onClick: e => e.preventDefault(),
+}))`
+font-size: 0.875rem;
+color: var(--white);
+text-decoration: none;
+&:hover {
+color: var(--gold-100);
+}
+> * {
+&:first-child{
+  display: ${props => props.image && "block"};
+}}
 `;
