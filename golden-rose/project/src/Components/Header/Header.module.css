@@ -5,9 +5,49 @@
   background-image: url(../../Images/Header/Roses.svg);
 }
 
+.indexTitle {
+  width: 100%;
+  height: 912px;
+  position: relative;
+}
+
+.title {
+  display: block;
+  line-height: 72px;
+  font-size: 3.75rem;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 25px;
+}
+
+.shadow {
+  position: absolute;
+  z-index: 1;
+  top: 148px;
+}
+
+.flower {
+  position: absolute;
+  z-index: 3;
+}
+
+.text{
+  font-size: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 700px;
+}
+
+.blurFooter {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0) -56.87%, #080808 100%);
+}
+
 /* PRIMARY HEADER */
 .primContainer {
-  width: 100%;
+  width: "100%";
   height: 88px;
   background: linear-gradient(
     180deg,
