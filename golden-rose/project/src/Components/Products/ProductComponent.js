@@ -4,7 +4,7 @@ import { CustomLink, FlexWrapper } from '../StyledComponent';
 // STYLE
 import Style from "./Products.module.css";
 // IMG
-import Basket from "../../Images/Basket.svg";
+import Basket from "../../Images/Products/Basket.svg";
 
 const ProductComponent = (props) => {
 

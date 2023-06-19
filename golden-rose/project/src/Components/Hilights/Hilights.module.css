@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  height: 360px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows: 289px;
+  grid-template-columns: auto;
+}
+
+.hilightsContainer {
+  width: 1153px;
+  height: 100%;
+}
+
+/* Hilight Component */
+.hilight {
+  width: 265px;
+  height: 350px;
+  display: grid;
+  text-align: center;
+  line-height: 35px;
+  justify-content: center;
+  background-color: var(--black);
+}
+
+.hilightImage {
+  width: 100%;
+  height: 120px;
+}
+
+.hilightImage img {
+  width: 200px;
+  height: 200px;
+}
+
+.hilightText {
+  width: 100%;
+  height: 120px;
+}
+
+.hilightText h4 {
+  color: var(--gold-100);
+}

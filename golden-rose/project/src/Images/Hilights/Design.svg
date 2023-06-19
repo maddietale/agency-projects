@@ -1,0 +1,32 @@
+<svg width="302" height="302" viewBox="0 0 302 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.25" filter="url(#filter0_f_215_272914)">
+<circle cx="151" cy="151" r="60" fill="#C6B780"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M175 135C174.976 128.381 169.613 123.022 163 123.022C169.627 123.022 175 117.64 175 111C175.024 117.619 180.387 122.978 187 122.978C180.372 122.978 175 128.36 175 135Z" fill="#D8CDA7"/>
+<path d="M151 185V152M151 138.5C151.333 136.5 153.3 132.5 158.5 132.5C158.5 132.5 158.667 140.833 158.5 145C158.167 147.333 156.2 152 151 152M151 138.5V152M151 138.5C151 136.5 147.5 132.5 143 132.5C143 134 143 137 143 143C143 149 147 152 151 152" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M158.5 134.5C156.667 135 153 137.2 153 142C153 146.8 153 150.333 153 151.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M143 134.5C144.833 135 148.5 137.2 148.5 142C148.5 146.8 148.5 150.333 148.5 151.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M158.5 137.5C157.5 138 155.5 140.1 155.5 144.5C155.5 148.9 155.5 150.333 155.5 150.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M143 137.5C144 138 146 140.1 146 144.5C146 148.9 146 149.833 146 150" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M148.5 134.5C150 133 151.5 133 153 134.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M146.5 133C149.167 130.333 152.333 130.333 155 133" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M151 172.5L165.5 161" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M151 167.5L136 156" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M153.5 170.5H163.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M138 165.2H148" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M157 167.5V159.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M144.5 162.5V154.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M143.5 165.038C141.5 167.772 139 168.272 136 165.038C138.5 161.538 141.5 161.772 143.5 165.038Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M144.462 159.5C141.728 157.5 141.228 155 144.462 152C147.962 154.5 147.728 157.5 144.462 159.5Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M139.755 158.786C136.336 159.832 133.908 158.674 133.418 154.044C137.743 152.667 140.129 154.762 139.755 158.786Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M161.604 163.986C165.023 165.032 167.451 163.874 167.941 159.244C163.616 157.868 161.23 159.962 161.604 163.986Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M156.962 164.5C154.228 162.5 153.728 160 156.962 157C160.462 159.5 160.228 162.5 156.962 164.5Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M158 170.538C160 173.272 162.5 173.772 165.5 170.538C163 167.038 160 167.272 158 170.538Z" stroke="#ADA071" stroke-linecap="round"/>
+<defs>
+<filter id="filter0_f_215_272914" x="0" y="0" width="302" height="302" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="45.5" result="effect1_foregroundBlur_215_272914"/>
+</filter>
+</defs>
+</svg>

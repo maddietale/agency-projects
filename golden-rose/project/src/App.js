@@ -1,6 +1,7 @@
 // COMPONENTS
 import IndexHeader from "./Components/Header/IndexHeader.js";
 import Products from "./Components/Products/Products.js";
+import Hilights from "./Components/Hilights/Hilights.js";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       {/* LANDING PAGE */}
       <IndexHeader />
       <Products />
+      <Hilights />
     </div>
   );
 }

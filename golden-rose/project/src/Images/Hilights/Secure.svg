@@ -1,0 +1,37 @@
+<svg width="302" height="302" viewBox="0 0 302 302" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.25" filter="url(#filter0_f_218_272960)">
+<circle cx="151" cy="151" r="60" fill="#C6B780"/>
+</g>
+<g clip-path="url(#clip0_218_272960)">
+<path d="M151 178V145M151 131.5C151.333 129.5 153.3 125.5 158.5 125.5C158.5 125.5 158.666 133.833 158.5 138C158.166 140.333 156.2 145 151 145M151 131.5V145M151 131.5C151 129.5 147.5 125.5 143 125.5C143 127 143 130 143 136C143 142 147 145 151 145" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M158.5 127.5C156.666 128 153 130.2 153 135C153 139.8 153 143.333 153 144.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M143 127.5C144.833 128 148.5 130.2 148.5 135C148.5 139.8 148.5 143.333 148.5 144.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M158.5 130.5C157.5 131 155.5 133.1 155.5 137.5C155.5 141.9 155.5 143.333 155.5 143.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M143 130.5C144 131 146 133.1 146 137.5C146 141.9 146 142.833 146 143" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M148.5 127.5C150 126 151.5 126 153 127.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M146.5 126C149.166 123.333 152.333 123.333 155 126" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M151 165.5L165.5 154" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M151 160.5L136 149" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M153.5 163.5H163.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M138 158.2H148" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M157 160.5V152.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M144.5 155.5V147.5" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M143.5 158.038C141.5 160.772 139 161.272 136 158.038C138.5 154.538 141.5 154.772 143.5 158.038Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M144.462 152.5C141.727 150.5 141.227 148 144.462 145C147.962 147.5 147.727 150.5 144.462 152.5Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M139.754 151.786C136.336 152.832 133.907 151.674 133.418 147.044C137.743 145.667 140.129 147.762 139.754 151.786Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M161.604 156.986C165.023 158.032 167.451 156.874 167.941 152.244C163.616 150.868 161.229 152.962 161.604 156.986Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M156.962 157.5C154.227 155.5 153.727 153 156.962 150C160.462 152.5 160.227 155.5 156.962 157.5Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M158 163.538C160 166.272 162.5 166.772 165.5 163.538C163 160.038 160 160.272 158 163.538Z" stroke="#ADA071" stroke-linecap="round"/>
+<path d="M111.001 160.565C110.999 155.464 111.001 137.609 111.001 124.855C126.439 124.855 139.071 107 139.071 107H165.737C165.737 107 174.158 124.855 191 124.855V160.565C191 177.145 160.122 183.522 150.299 195C139.07 183.522 111 177.145 111.001 160.565Z" stroke="#D8CDA7" stroke-width="2.5"/>
+</g>
+<defs>
+<filter id="filter0_f_218_272960" x="0" y="0" width="302" height="302" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="45.5" result="effect1_foregroundBlur_218_272960"/>
+</filter>
+<clipPath id="clip0_218_272960">
+<rect width="96" height="96" fill="white" transform="translate(103 103)"/>
+</clipPath>
+</defs>
+</svg>
