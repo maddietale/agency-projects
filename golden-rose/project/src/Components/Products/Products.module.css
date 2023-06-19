@@ -1,4 +1,47 @@
 .container {
   width: 100%;
   height: 624px;
+  display: grid;
+  row-gap: 16px;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: auto;
+  grid-template-rows: 63px 368px;
+}
+
+.productsTitle {
+  width: 1104px;
+  height: 100%;
+}
+
+.productsContainer {
+  width: 1104px;
+  height: 100%;
+}
+
+.bgRose {
+  z-index: -1;
+  margin-top: 400px;
+  position: absolute;
+}
+
+/* Product Component */
+.product {
+  width: 264px;
+  height: 368px;
+  border: 0.5px solid var(--dark-gold);
+  border-radius: 10px;
+  background-color: var(--black);
+}
+
+.productHover{
+  width: 100%;
+  height: 104px;
+  margin-top: 270px;
+  opacity: 0.8;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--black);
+  border: 1px solid var(--dark-gold);
+  background-image: url(../../Images/Header/Roses.svg);
 }

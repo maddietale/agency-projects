@@ -31,7 +31,9 @@ const PrimHeader = () => {
             <FlexWrapper gapSize={"32px"}>
                 <FlexLink onMouseEnter={() => setIsArrow(true)} onMouseLeave={() => setIsArrow(false)} url={"/"} gapSize={"8px"}>
                     دسته‌بندی‌ها
-                    <img src={isArrow ? (ArrowHover) : (Arrow)} alt="Arrow" />
+                    <CustomLink image>
+                        <img src={isArrow ? (ArrowHover) : (Arrow)} alt="Arrow" />
+                    </CustomLink>
                 </FlexLink>
                 <CustomLink url="/">وبلاگ</CustomLink>
                 <CustomLink url="/">گالری</CustomLink>
