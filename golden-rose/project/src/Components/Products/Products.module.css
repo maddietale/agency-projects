@@ -22,7 +22,7 @@
 
 .bgRose {
   z-index: -1;
-  margin-top: 400px;
+  top: 400px;
   position: absolute;
 }
 

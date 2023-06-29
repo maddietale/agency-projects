@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  height: 305px;
+}
+
+.aboutDescription {
+  width: 670px;
+  height: 100%;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutDescription span {
+  max-width: 615px;
+}
+
+.aboutImg {
+  width: 440px;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}

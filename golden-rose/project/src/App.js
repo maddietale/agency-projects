@@ -2,6 +2,8 @@
 import IndexHeader from "./Components/Header/IndexHeader.js";
 import Products from "./Components/Products/Products.js";
 import Hilights from "./Components/Hilights/Hilights.js";
+import Order from "./Components/Order/Order.js";
+import About from "./Components/About/About.js";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <IndexHeader />
       <Products />
       <Hilights />
+      <Order />
+      <About />
     </div>
   );
 }
