@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // COMPONENTS
-import { CustomLink, FlexWrapper } from '../StyledComponent';
+import { CustomLink, FlexWrapper } from "../StyledComponent";
 // STYLE
 import Style from "./Products.module.css";
 // IMG
@@ -20,7 +20,7 @@ const ProductComponent = (props) => {
                 </div>
                 <div>
                     <CustomLink image>
-                        <img src={Basket} alt='Shop' />
+                        <img src={Basket} alt="Shop" />
                     </CustomLink>
                 </div>
             </FlexWrapper>) : ("")}

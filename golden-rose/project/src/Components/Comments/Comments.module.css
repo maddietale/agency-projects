@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  height: 672px;
+  position: relative;
+  display: grid;
+  text-align: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto 250px 60px auto;
+}
+
+.bgRose {
+  z-index: -1;
+  top: 110px;
+  right: 82%;
+  position: absolute;
+}
+
+.blah {
+  align-self: center;
+}
+
+.commentsBox {
+  width: 1120px;
+  height: 100%;
+  justify-self: center;
+}
+
+.commentsArrow {
+  width: 1120px;
+  height: 100%;
+  justify-self: center;
+}
+
+.commentsArrow img {
+  cursor: pointer;
+}
+
+/* Comment Component */
+.commentContainer {
+  width: 312px;
+  height: 248px;
+  border: 0.5px solid var(--gold-100);
+  border-radius: 10px;
+  margin: 0 12px;
+  background-color: var(--black);
+  background-image: url(../../Images/Header/Roses.svg);
+}

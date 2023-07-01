@@ -4,6 +4,7 @@ import Products from "./Components/Products/Products.js";
 import Hilights from "./Components/Hilights/Hilights.js";
 import Order from "./Components/Order/Order.js";
 import About from "./Components/About/About.js";
+import Comments from "./Components/Comments/Comments.js";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hilights />
       <Order />
       <About />
+      <Comments />
     </div>
   );
 }
