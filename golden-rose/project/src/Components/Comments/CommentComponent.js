@@ -2,15 +2,13 @@ import React from "react";
 // STYLE
 import Style from "./Comments.module.css";
 import { CustomLink, FlexWrapper } from "../StyledComponent";
-// IMG
-import user from "../../Images/Comments/user.svg";
 
 const CommentComponent = (props) => {
     return (
         <div className={Style.commentContainer}>
             <FlexWrapper className={Style.commentInfo}>
                 <CustomLink image>
-                    <img src={user} alt="user" />
+                    <img src={props.cmUser} alt="user" />
                 </CustomLink>
                 <div className={Style.commentTitle}>
                     <h5>{props.cmUsername}</h5>

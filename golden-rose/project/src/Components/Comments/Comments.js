@@ -9,16 +9,19 @@ import { FlexWrapper } from "../StyledComponent";
 import Rose from "../../Images/BGRose.svg";
 import rightArrow from "../../Images/Comments/rightArrow.svg";
 import leftArrow from "../../Images/Comments/leftArrow.svg";
+import user from "../../Images/Comments/user.svg";
 
 const Comments = () => {
     // STATES
     const [move, setMove] = useState(0);
     // FUNC
     const clickHandler = (direction) => {
-        if (direction === "left")
+        if (direction === "left") {
             setMove(move - 150);
-        else
+        }
+        else {
             setMove(move + 150);
+        }
     };
 
     return (
@@ -28,7 +31,7 @@ const Comments = () => {
             <div className={Style.commentsBox}>
                 <FlexWrapper className={Style.wrapper} justifyContent={"center"} style={{ transform: `translateX(${move}px)` }}>
                     {commentItems.map((item) => (
-                        <CommentComponent key={item.id} cmUsername={item.username} cmTitle={item.title} cmDesc={item.desc} />
+                        <CommentComponent key={item.id} cmUsername={item.username} cmTitle={item.title} cmDesc={item.desc} cmUser={user} />
                     ))}
                 </FlexWrapper>
             </div>

@@ -1,11 +1,11 @@
 .container {
   width: 100%;
   height: 672px;
-  position: relative;
   display: grid;
+  position: relative;
   text-align: center;
   grid-template-columns: auto;
-  grid-template-rows: auto 250px 60px auto;
+  grid-template-rows: auto 250px 60px 100px;
 }
 
 .bgRose {
@@ -16,13 +16,14 @@
 }
 
 .container h1 {
-  align-self: center;
+  margin-bottom: 5%;
+  align-self: flex-end;
 }
 
 .commentsBox {
+  width: 1120px;
   height: 100%;
   overflow: hidden;
-  max-width: 1120px;
   justify-self: center;
 }
 
@@ -44,10 +45,10 @@
 .commentContainer {
   width: 312px;
   height: 248px;
-  border: 0.5px solid var(--gold-100);
-  border-radius: 10px;
   padding: 2%;
   margin: 0 12px;
+  border-radius: 10px;
+  border: 0.5px solid var(--gold-100);
   background-color: var(--black);
   background-image: url(../../Images/Header/Roses.svg);
 }
@@ -55,15 +56,14 @@
 .commentInfo img {
   width: 55px;
   height: 55px;
-  border: 0.5px solid var(--gold-100);
   border-radius: 50%;
-  background: #000;
+  border: 0.5px solid var(--gold-100);
 }
 
 .commentTitle {
-  text-align: right;
-  margin-right: 5%;
   cursor: default;
+  margin-right: 5%;
+  text-align: right;
 }
 
 .commentDesc {
