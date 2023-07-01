@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-// COMPONENTS
-import { CustomLink, FlexWrapper } from "../StyledComponent";
 // STYLE
 import Style from "./Products.module.css";
+import { CustomLink, FlexWrapper } from "../StyledComponent";
 // IMG
 import Basket from "../../Images/Products/Basket.svg";
 

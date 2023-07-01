@@ -15,14 +15,19 @@
   position: absolute;
 }
 
-.blah {
+.container h1 {
   align-self: center;
 }
 
 .commentsBox {
-  width: 1120px;
   height: 100%;
+  overflow: hidden;
+  max-width: 1120px;
   justify-self: center;
+}
+
+.wrapper {
+  transition: all 1s ease;
 }
 
 .commentsArrow {
@@ -41,7 +46,31 @@
   height: 248px;
   border: 0.5px solid var(--gold-100);
   border-radius: 10px;
+  padding: 2%;
   margin: 0 12px;
   background-color: var(--black);
   background-image: url(../../Images/Header/Roses.svg);
+}
+
+.commentInfo img {
+  width: 55px;
+  height: 55px;
+  border: 0.5px solid var(--gold-100);
+  border-radius: 50%;
+  background: #000;
+}
+
+.commentTitle {
+  text-align: right;
+  margin-right: 5%;
+  cursor: default;
+}
+
+.commentDesc {
+  width: 250px;
+  margin: 5% 2%;
+  cursor: default;
+  overflow: scroll;
+  max-height: 135px;
+  text-align: right;
 }
