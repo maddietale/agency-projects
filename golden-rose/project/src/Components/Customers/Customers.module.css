@@ -3,10 +3,42 @@
   height: 528px;
   display: grid;
   position: relative;
-  grid-template-rows: auto auto auto;
+  text-align: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto 72px auto;
+}
+
+.container h1 {
+  margin-bottom: 5%;
+  align-self: flex-end;
+}
+
+.customersLogo {
+  height: 100%;
+}
+
+.addWrapper {
+  margin-top: 5%;
+  justify-self: center;
+  align-self: flex-start;
+}
+
+.addCustomer {
+  height: 45px;
+  width: 338px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--black);
+  border-radius: 26px;
+  background: linear-gradient(135deg, #c6b780 0%, #b49d4a 100%);
 }
 
 .bgRose {
-    z-index: -1;
-    position: absolute;
-  }
+  z-index: -1;
+  position: absolute;
+}

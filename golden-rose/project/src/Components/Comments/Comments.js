@@ -29,7 +29,7 @@ const Comments = () => {
             <img src={Rose} alt="Rose" className={Style.bgRose} />
             <h1>مشتریان ما درباره رز طلایی چه می‌گویند ؟</h1>
             <div className={Style.commentsBox}>
-                <FlexWrapper className={Style.wrapper} justifyContent={"center"} style={{ transform: `translateX(${move}px)` }}>
+                <FlexWrapper justifyContent={"center"} className={Style.wrapper} style={{ transform: `translateX(${move}px)` }}>
                     {commentItems.map((item) => (
                         <CommentComponent key={item.id} cmUsername={item.username} cmTitle={item.title} cmDesc={item.desc} cmUser={user} />
                     ))}
