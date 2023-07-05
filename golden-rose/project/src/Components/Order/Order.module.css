@@ -11,12 +11,6 @@
   right: 82%;
 }
 
-.bgRoseBottom {
-  z-index: -1;
-  position: absolute;
-  top: 700px;
-}
-
 .orderBox {
   width: 1120px;
   height: 616px;
@@ -28,6 +22,11 @@
   border-radius: 10px;
 }
 
+.orderImg {
+  width: 500px;
+  height: 384px;
+}
+
 .orderSteps {
   width: 620px;
   height: 100%;
@@ -35,72 +34,48 @@
 }
 
 .orderSteps h1 {
-  margin: 110px 0 0 110px;
+  margin: 110px 0 72px 110px;
 }
-
-.item1 {
-    grid-area: step;
-    background-color: red;
-  }
-  .item2 {
-    grid-area: arrow;
-    background-color: red;
-  }
-  .item3 {
-    grid-area: step;
-    background-color: blue;
-  }
-  .item4 {
-    grid-area: arrow;
-    background-color: red;
-  }
-  .item5 {
-    grid-area: step;
-    background-color: red;
-  }
-  .item6 {
-    grid-area: arrow;
-    background-color: blue;
-  }
-  .item7 {
-    grid-area: step;
-    background-color: red;
-  }
-  .item8 {
-    grid-area: arrow;
-    background-color: red;
-  }
-  .item9 {
-    grid-area: atep;
-    background-color: blue;
-  }
-  .item10 {
-    grid-area: btn;
-    background-color: yellow;
-  }
-  .item11 {
-    grid-area: btn;
-    background-color: yellow;
-  }
-  .item12 {
-    grid-area: btn;
-    background-color: yellow;
-  }
 
 .steps {
   width: 560px;
   height: 300px;
   display: grid;
-  grid-template-areas:
-    "step arrow step arrow"
-    "step arrow step arrow"
-    "step arrow btn";
-  grid-template-columns: 150px 80px 150px 80px;
+  grid-template-columns: 180px 80px 180px 80px;
   grid-template-rows: auto auto auto;
   gap: 10px;
 }
 
-.orderImg {
-  width: 500px;
-  height: 100%;
+.stepIcon {
+  opacity: 0.4;
+}
+
+.steps span {
+  display: block;
+}
+
+.startWrapper {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.start {
+  height: 45px;
+  width: 218px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--black);
+  border-radius: 26px;
+  background: linear-gradient(135deg, #c6b780 0%, #b49d4a 100%);
+}
+
+.bgRoseBottom {
+  z-index: -1;
+  position: absolute;
+  top: 700px;
 }
