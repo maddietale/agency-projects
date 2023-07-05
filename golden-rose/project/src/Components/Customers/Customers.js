@@ -1,7 +1,7 @@
 import React from 'react';
 // STYLE
 import Style from "./Customers.module.css";
-import { CustomLink, FlexWrapper } from '../StyledComponent';
+import { CustomLink, FlexWrapper, GoldenTitle1 } from '../StyledComponent';
 // IMG
 import Rose from "../../Images/BGRose.svg";
 import Bazar from "../../Images/Customers/Bazar.svg";
@@ -15,7 +15,7 @@ import Arrow from "../../Images/Customers/Arrow.svg";
 const Customers = () => {
     return (
         <div className={Style.container}>
-            <h1>مشتریان سازمانی رز طلایی چه کسانی هستند؟</h1>
+            <h1>مشتریان سازمانی <GoldenTitle1 /> چه کسانی هستند؟</h1>
             <FlexWrapper justifyContent={"center"} gapSize={"48px"} className={Style.customersLogo}>
                 <CustomLink image url={"https://www.digikala.com/"}>
                     <img src={Digikala} alt='logo' />

@@ -41,3 +41,36 @@ color: var(--gold-100);
   display: ${props => props.image && "block"};
 }}
 `;
+
+
+export const GoldenTitle1 = styled.h1`
+::before{
+  content: "رز طلایی";
+}
+display: inline;
+color: var(--dark-gold);
+`;
+
+export const GoldenTitle4 = styled.h4`
+::before{
+  content: "رز طلایی";
+}
+display: inline;
+color: var(--dark-gold);
+`;
+
+export const GoldenTitle6 = styled.h6`
+::before{
+  content: "رز طلایی";
+}
+display: inline;
+color: var(--dark-gold);
+`;
+
+export const GoldenText = styled.span`
+::before{
+  content: "رز طلایی";
+}
+display: inline;
+color: var(--dark-gold);
+`;

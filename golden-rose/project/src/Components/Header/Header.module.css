@@ -32,11 +32,13 @@
   z-index: 3;
 }
 
-.text{
+.text {
   font-size: 1rem;
   text-align: center;
   position: absolute;
   top: 700px;
+  margin-top: 28px;
+  max-width: 460px;
 }
 
 .blurFooter {

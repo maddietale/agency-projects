@@ -4,7 +4,7 @@ import CommentComponent from "./CommentComponent";
 import { commentItems } from "../../data";
 // STYLE
 import Style from "./Comments.module.css";
-import { FlexWrapper } from "../StyledComponent";
+import { FlexWrapper, GoldenTitle1 } from "../StyledComponent";
 // IMG
 import Rose from "../../Images/BGRose.svg";
 import rightArrow from "../../Images/Comments/rightArrow.svg";
@@ -43,7 +43,7 @@ const Comments = () => {
     return (
         <div className={Style.container}>
             <img src={Rose} alt="Rose" className={Style.bgRose} />
-            <h1>مشتریان ما درباره رز طلایی چه می‌گویند ؟</h1>
+            <h1>مشتریان ما درباره <GoldenTitle1 /> چه می‌گویند ؟</h1>
             <div className={Style.commentsBox}>
                 <CommentComponent key={commentItems[index].id} cmUsername={commentItems[index].username} cmTitle={commentItems[index].title} cmDesc={commentItems[index].desc} cmUser={user} />
                 <CommentComponent key={commentItems[index + 1].id} cmUsername={commentItems[index + 1].username} cmTitle={commentItems[index + 1].title} cmDesc={commentItems[index + 1].desc} cmUser={user} />

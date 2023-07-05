@@ -46,7 +46,7 @@
 .commentContainer {
   width: 312px;
   height: 248px;
-  padding: 2%;
+  padding: 5%;
   margin: 0 12px;
   border-radius: 10px;
   border: 0.5px solid var(--gold-100);
