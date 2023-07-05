@@ -4,3 +4,32 @@
   display: grid;
   background-color: var(--black);
 }
+
+.footerWrapper {
+  width: 100%;
+  height: 437px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: auto auto auto auto;
+  background-color: var(--black);
+  background-image: url("../../Images/Footer/Back.svg");
+}
+
+.clm1,
+.clm2,
+.clm3,
+.clm4 {
+  align-self: center;
+  justify-self: center;
+}
+
+.copyright {
+  width: 100%;
+  height: 48px;
+  font-size: 0.875rem;
+  color: var(--black);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-gold);
+}
