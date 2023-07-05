@@ -37,38 +37,46 @@ body {
 h1 {
   font-size: 2.125rem;
   font-weight: bold;
+  cursor: default;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: bold;
+  cursor: default;
 }
 
 h3 {
   font-size: 1.75rem;
   font-weight: bold;
+  cursor: default;
 }
 
 h4 {
   font-size: 1.5rem;
   font-weight: bold;
+  cursor: default;
 }
 
 h5 {
   font-size: 1rem;
   font-weight: bold;
+  cursor: default;
 }
 
 h6 {
   font-size: 0.875rem;
   font-weight: bold;
+  cursor: default;
 }
 
 p {
   font-size: 1.25rem;
+  cursor: default;
 }
 
 span {
   font-size: 1rem;
   font-weight: bold;
+  cursor: default;
 }

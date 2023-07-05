@@ -29,6 +29,7 @@ export const CustomLink = styled.a.attrs(props => ({
   href: props.url || "/",
   onClick: e => e.preventDefault(),
 }))`
+display: ${props => props.display || ""};
 font-size: 0.875rem;
 color: var(--white);
 text-decoration: none;
