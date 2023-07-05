@@ -15,26 +15,24 @@ const Comments = () => {
     // STATES
     const [index, setIndex] = useState(0);
     const [leftDisable, setLeftDisable] = useState(false);
-    const [rightDisable, setRightDisable] = useState(false);
+    const [rightDisable, setRightDisable] = useState(true);
     // FUNC
     const clickHandler = (direction) => {
         if (direction === "left") {
             if (index !== commentItems.length - 3) {
                 setIndex(index + 1);
-                console.log("1" + index);
                 setRightDisable(false);
             }
-            else {
+            if (index === commentItems.length - 4) {
                 setLeftDisable(true);
             }
         }
         else {
             if (index !== 0) {
                 setIndex(index - 1);
-                console.log(index);
                 setLeftDisable(false);
             }
-            else {
+            if (index === 1) {
                 setRightDisable(true);
             }
         }
@@ -50,8 +48,8 @@ const Comments = () => {
                 <CommentComponent key={commentItems[index + 2].id} cmUsername={commentItems[index + 2].username} cmTitle={commentItems[index + 2].title} cmDesc={commentItems[index + 2].desc} cmUser={user} />
             </div>
             <FlexWrapper justifyContent={"space-between"} className={Style.commentsArrow}>
-                {rightDisable ? (<img src={rightArrow} alt="next" style={{ opacity: "0.4" }} />) : (<img src={rightArrow} alt="next" onClick={() => clickHandler("right")} />)}
-                {leftDisable ? (<img src={leftArrow} alt="next" style={{ opacity: "0.4" }} />) : (<img src={leftArrow} alt="next" onClick={() => clickHandler("left")} />)}
+                {rightDisable ? (<img src={rightArrow} alt="next" style={{ opacity: "0.4", cursor: "default" }} />) : (<img src={rightArrow} alt="next" onClick={() => clickHandler("right")} />)}
+                {leftDisable ? (<img src={leftArrow} alt="next" style={{ opacity: "0.4", cursor: "default" }} />) : (<img src={leftArrow} alt="next" onClick={() => clickHandler("left")} />)}
             </FlexWrapper>
         </div>
     );
