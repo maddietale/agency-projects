@@ -19,13 +19,26 @@
 .clm2,
 .clm3,
 .clm4 {
+  height: 300px;
   align-self: flex-end;
   justify-self: center;
-  margin-bottom: 12%;
 }
 
-.clm2 *, .clm3 *{
+.roseLogo,
+.clm1 .title1,
+.clm2 .title2,
+.clm3 .title3,
+.clm4 .title4 {
+  margin-bottom: 16px;
+}
+.clm1 .item1,
+.clm2 .item2,
+.clm3 .item3 {
   margin-bottom: 8px;
+}
+
+.clm4 {
+  text-align: center;
 }
 
 .copyright {
