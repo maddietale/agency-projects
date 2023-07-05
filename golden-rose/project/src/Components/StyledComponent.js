@@ -31,10 +31,10 @@ export const CustomLink = styled.a.attrs(props => ({
 }))`
 display: ${props => props.display || ""};
 font-size: 0.875rem;
-color: var(--white);
+color: ${props => props.color || "var(--white)"};
 text-decoration: none;
 &:hover {
-color: var(--gold-100);
+color: ${props => props.hover || "var(--gold-100)"};
 }
 > * {
 &:first-child{

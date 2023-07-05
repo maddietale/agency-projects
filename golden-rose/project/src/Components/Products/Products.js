@@ -23,9 +23,7 @@ const Products = () => {
                 </FlexWrapper>
                 <FlexWrapper gapSize={"8px"}>
                     <h5>مشاهده همه محصولات</h5>
-                    <CustomLink>
-                        <img src={Arrow} alt="All Products" />
-                    </CustomLink>
+                    <CustomLink image> <img src={Arrow} alt="All Products" /> </CustomLink>
                 </FlexWrapper>
             </FlexWrapper>
 

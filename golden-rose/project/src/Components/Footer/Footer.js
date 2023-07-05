@@ -37,7 +37,7 @@ const Footer = () => {
                     <CustomLink className={Style.item3} display={"block"}>باکس گل‌های رز جادویی</CustomLink>
                     <CustomLink className={Style.item3} display={"block"}>باکس گل‌های رز معلق</CustomLink>
                     <CustomLink className={Style.item3} display={"block"}>باکس گل‌های ولنتاین</CustomLink>
-                    <CustomLink className={Style.item3} display={"block"}><h6 style={{display: "inline", color: "var(--dark-gold)"}} >جدید</h6> گلدان‌های رز جاوید</CustomLink>
+                    <CustomLink className={Style.item3} display={"block"}><h6 style={{ display: "inline", color: "var(--dark-gold)" }} >جدید</h6> گلدان‌های رز جاوید</CustomLink>
                 </div>
                 <div className={Style.clm4}>
                     <h4 className={Style.title4}>نمادهای <GoldenTitle4 /></h4>
@@ -47,7 +47,7 @@ const Footer = () => {
                     </FlexWrapper>
                 </div>
             </div>
-            <div className={Style.copyright}>این یک طرح کانسپت از “علی محمدزاده” است و هیچ گونه استفاده تجاری ندارد. (کلیه حقوق این سایت محفوظ است.)</div>
+            <div className={Style.copyright}><h6>این یک طرح کانسپت از «علی محمدزاده»، پیاده شده توسط <CustomLink url={"https://github.com/maddietale"} display={"inline"} color={"var(--black)"} hover={"var(--white)"} style={{ fontStyle: "italic" }}>«مدی»</CustomLink> است و هیچ گونه استفاده تجاری ندارد. (کلیه حقوق این سایت محفوظ است.)</h6></div>
         </div>
     );
 };
