@@ -25,10 +25,11 @@
   height: 100%;
   overflow: hidden;
   justify-self: center;
-}
-
-.wrapper {
-  transition: all 1s ease;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 312px 312px 312px;
+  justify-content: center;
+  column-gap: 24px;
 }
 
 .commentsArrow {

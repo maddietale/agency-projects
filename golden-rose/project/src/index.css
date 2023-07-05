@@ -80,3 +80,7 @@ span {
   font-weight: bold;
   cursor: default;
 }
+
+pre {
+  cursor: default;
+}

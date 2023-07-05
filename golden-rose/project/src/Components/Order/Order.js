@@ -19,7 +19,7 @@ const Order = () => {
         <div className={Style.container}>
             <img src={Rose} alt="Rose" className={Style.bgRoseTop} />
             <FlexWrapper className={Style.orderBox}>
-                <FlexWrapper justifyContent={"center"} className={Style.orderImg}><img src={OrderImg} /></FlexWrapper>
+                <FlexWrapper justifyContent={"center"} className={Style.orderImg}><img src={OrderImg} alt='garden' /></FlexWrapper>
                 <div className={Style.orderSteps}>
                     <h1>آیا به یک محصول سفارشی نیاز دارید؟</h1>
                     <div className={Style.steps}>
