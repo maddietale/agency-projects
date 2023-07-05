@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  height: 528px;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto auto auto;
+}
+
+.bgRose {
+    z-index: -1;
+    position: absolute;
+  }

@@ -5,6 +5,8 @@ import Hilights from "./Components/Hilights/Hilights.js";
 import Order from "./Components/Order/Order.js";
 import About from "./Components/About/About.js";
 import Comments from "./Components/Comments/Comments.js";
+import Customers from "./Components/Customers/Customers.js";
+import Footer from "./Components/Footer/Footer.js";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Order />
       <About />
       <Comments />
+      <Customers />
+      <Footer />
     </div>
   );
 }
