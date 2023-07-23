@@ -15,26 +15,20 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1120px;
-  justify-content: center;
 `;
 
 const Home = () => {
   return (
     <Container>
-      <div>
-        <Header />
-        <Slider />
-        <PopularProducts />
-        <Sale />
-        <PopularGlasses />
-        <PopularWatches />
-        <PopularBags />
-        <BlogPosts />
-        <Footer />
-      </div>
+      <Header />
+      <Slider />
+      <PopularProducts />
+      <Sale />
+      <PopularGlasses />
+      <PopularWatches />
+      <PopularBags />
+      <BlogPosts />
+      <Footer />
     </Container>
   );
 };

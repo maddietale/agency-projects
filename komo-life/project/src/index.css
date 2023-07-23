@@ -1,7 +1,26 @@
-/* GLOBAL STYLE*/
+/* FONTS */
+@font-face {
+  font-family: "On";
+  src: url("");
+}
+
+/* COLORS */
+:root {
+  --main-black: #121212;
+  --main-white: #ffffff;
+  --main-red: #ff4435;
+  --black-one: #5a5a5a;
+  --black-two: #898989;
+  --black-three: #b8b8b8;
+  --black-four: #e8e8e8;
+  --black-five: #f3f3f3;
+}
+
+/* GLOBAL STYLE */
 * {
   margin: 0;
   padding: 0;
   direction: rtl;
   box-sizing: border-box;
+  cursor: default;
 }
