@@ -1,5 +1,5 @@
 import { useState } from "react";
-// Image
+// IMG
 import TextLogo from "../images/TextLogo.svg";
 import Arrow from "../images/header/Arrow.svg";
 import HoverArrow from "../images/header/HoverArrow.svg";
@@ -10,7 +10,7 @@ import HoverUser from "../images/header/HoverUser.svg";
 import Basket from "../images/header/Basket.svg";
 // STYLE
 import styled from "styled-components";
-// BOX
+// GRID
 const Wrapper = styled.div`
   display: grid;
   grid-template-rows: auto;
@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   align-items: center;
   border-bottom: 1px solid #000000;
 `;
+// BOX
 const Container = styled.div`
   width: 100%;
   height: 80px;
