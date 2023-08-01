@@ -13,8 +13,8 @@ import styled from "styled-components";
 // GRID
 const Wrapper = styled.div`
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: 1120px;
+  height: 88px;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #000000;

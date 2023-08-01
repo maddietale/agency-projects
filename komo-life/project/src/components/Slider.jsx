@@ -1,15 +1,15 @@
 // IMG
-import image from "../images/Slider/img.svg";
-import Glass from "../images/Slider/Glass.svg";
-import Right from "../images/Slider/RightBTN.svg";
-import Left from "../images/Slider/LeftBTN.svg";
+import image from "../images/slider/img.svg";
+import Glass from "../images/slider/Glass.svg";
+import Right from "../images/slider/RightBTN.svg";
+import Left from "../images/slider/LeftBTN.svg";
 // STYLE
 import styled from "styled-components";
 // GRID
 const Wrapper = styled.div`
   display: grid;
-  grid-template-rows: 455px;
   grid-template-columns: 1120px;
+  height: 455px;
   justify-content: center;
   align-items: flex-end;
 `;
