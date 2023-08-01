@@ -1,7 +1,15 @@
 /* FONTS */
 @font-face {
   font-family: "On";
-  src: url("");
+  src: url("./font/OnMedium.ttf");
+}
+@font-face {
+  font-family: "On-Semi";
+  src: url("./font/OnSemiBold.ttf");
+}
+@font-face {
+  font-family: "On-Bold";
+  src: url("./font/OnBold.ttf");
 }
 
 /* COLORS */
@@ -29,4 +37,5 @@
   direction: rtl;
   box-sizing: border-box;
   cursor: default;
+  font-family: "On";
 }

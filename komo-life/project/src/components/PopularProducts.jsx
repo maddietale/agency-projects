@@ -15,14 +15,13 @@ const Wrapper = styled.div`
   height: 568px;
   justify-content: center;
   align-items: flex-end;
-  border-bottom: 1px solid #000000;
 `;
 // BOX
 const Container = styled.div`
   width: 100%;
   height: 408px;
   display: flex;
-  overflow-x: scroll;
+  overflow: scroll;
   align-items: center;
 `;
 const Info = styled.div`
@@ -50,9 +49,11 @@ const Title = styled.h2`
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
+  overflow: scroll;
 `;
 const Text = styled.span`
   font-size: 1rem;
+  overflow: scroll;
 `;
 const Arrow = styled.img`
   cursor: pointer;
@@ -72,10 +73,10 @@ const PopularProducts = () => {
         </Left>
       </Info>
       <Container>
-        <Widget url={P5} title={"عینک اول"} isBlog={false} price={"2900"} />
-        <Widget url={P2} title={"عینک دوم"} isBlog={false} price={"2900"} />
-        <Widget url={P3} title={"عینک سوم"} isBlog={false} price={"2900"} />
-        <Widget url={P4} title={"عینک چهارم"} isBlog={false} price={"2900"} />
+        <Widget url={P5} title={"محصول اول"} isBlog={false} price={"۲.۹۰۰.۰۰۰"} />
+        <Widget url={P2} title={"محصول دوم"} isBlog={false} price={"۲.۹۰۰.۰۰۰"} />
+        <Widget url={P3} title={"محصول سوم"} isBlog={false} price={"۲.۹۰۰.۰۰۰"} />
+        <Widget url={P4} title={"محصول چهارم"} isBlog={false} price={"۲.۹۰۰.۰۰۰"} />
       </Container>
     </Wrapper>
   );

@@ -39,10 +39,13 @@ const Button = styled.button`
 
 const Title = styled.span`
   font-size: 1.5rem;
+  width: 200px;
+  text-align: center;
 `;
 
 const Price = styled.span`
   font-size: 1rem;
+  text-align: center;
 `;
 
 const Widget = (props) => {
