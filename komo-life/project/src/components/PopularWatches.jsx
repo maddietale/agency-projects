@@ -11,36 +11,26 @@ import styled from "styled-components";
 // GRID
 const Wrapper = styled.div`
   display: grid;
+  grid-row-end: 56px 408px;
   grid-template-columns: 1120px;
-  height: 568px;
+  height: 544px;
+  margin: 56px 0 0 0;
   justify-content: center;
   align-items: flex-end;
 `;
-// BOX
-const Container = styled.div`
-  width: 100%;
-  height: 408px;
-  display: flex;
-  overflow: scroll;
-  align-items: center;
-`;
+// Title
 const Info = styled.div`
   width: 100%;
-  height: 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 const Right = styled.div`
-  width: 365px;
-  height: 56px;
   display: flex;
   gap: 16px;
   align-items: center;
 `;
 const Left = styled.div`
-  width: 156px;
-  height: 32px;
   display: flex;
   gap: 16px;
   align-items: center;
@@ -58,42 +48,50 @@ const Text = styled.span`
 const Arrow = styled.img`
   cursor: pointer;
 `;
+// BOX
+const Container = styled.div`
+  width: 100%;
+  height: 408px;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+`;
 
 const PopularWatches = () => {
   return (
     <Wrapper>
       <Info>
         <Right>
-          <img src={Watches} />
+          <img src={Watches} alt="watch"/>
           <Title>محبوب‌ترین ساعت‌های کومولایف</Title>
         </Right>
         <Left>
           <Text>مشاهده ساعت‌های بیشتر</Text>
-          <Arrow src={Icon} />
+          <Arrow src={Icon} alt="arrow"/>
         </Left>
       </Info>
       <Container>
         <Widget
           url={P8}
-          title={"ساعت اول"}
+          title={"ساعت Rey Legacy Leather Cognac"}
           isBlog={false}
           price={"۵.۲۰۰.۰۰۰"}
         />
         <Widget
           url={P2}
-          title={"ساعت دوم"}
+          title={"ساعت Rey Legacy Leather Cognac"}
           isBlog={false}
           price={"۵.۲۰۰.۰۰۰"}
         />
         <Widget
           url={P9}
-          title={"ساعت سوم"}
+          title={"ساعت Rey Legacy Leather Cognac"}
           isBlog={false}
           price={"۵.۲۰۰.۰۰۰"}
         />
         <Widget
           url={P4}
-          title={"ساعت چهارم"}
+          title={"ساعت Rey Legacy Leather Cognac"}
           isBlog={false}
           price={"۵.۲۰۰.۰۰۰"}
         />

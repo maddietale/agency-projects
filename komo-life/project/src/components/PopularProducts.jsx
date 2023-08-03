@@ -1,6 +1,6 @@
 import Widget from "./Widget";
 // IMG
-import P5 from "../images/products/5.svg";
+import P1 from "../images/products/1.svg";
 import P2 from "../images/products/2.svg";
 import P3 from "../images/products/3.svg";
 import P4 from "../images/products/4.svg";
@@ -11,36 +11,27 @@ import styled from "styled-components";
 // GRID
 const Wrapper = styled.div`
   display: grid;
+  grid-row-end: 56px 408px;
   grid-template-columns: 1120px;
-  height: 568px;
+  height: 544px;
+  margin: 56px 0 0 0;
   justify-content: center;
   align-items: flex-end;
 `;
-// BOX
-const Container = styled.div`
-  width: 100%;
-  height: 408px;
-  display: flex;
-  overflow: scroll;
-  align-items: center;
-`;
+// Title
 const Info = styled.div`
   width: 100%;
-  height: 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 const Right = styled.div`
-  width: 361px;
-  height: 56px;
   display: flex;
   gap: 16px;
   align-items: center;
+  overflow: scroll;
 `;
 const Left = styled.div`
-  width: 156px;
-  height: 32px;
   display: flex;
   gap: 16px;
   align-items: center;
@@ -58,25 +49,52 @@ const Text = styled.span`
 const Arrow = styled.img`
   cursor: pointer;
 `;
+// BOX
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+`;
 
 const PopularProducts = () => {
   return (
     <Wrapper>
       <Info>
         <Right>
-          <img src={Heart} />
+          <img src={Heart} alt="heart" />
           <Title>محبوب‌ترین محصولات کومولایف</Title>
         </Right>
         <Left>
           <Text>مشاهده همه محصولات</Text>
-          <Arrow src={Icon} />
+          <Arrow src={Icon} alt="arrow" />
         </Left>
       </Info>
       <Container>
-        <Widget url={P5} title={"محصول اول"} isBlog={false} price={"۲.۹۰۰.۰۰۰"} />
-        <Widget url={P2} title={"محصول دوم"} isBlog={false} price={"۲.۹۰۰.۰۰۰"} />
-        <Widget url={P3} title={"محصول سوم"} isBlog={false} price={"۲.۹۰۰.۰۰۰"} />
-        <Widget url={P4} title={"محصول چهارم"} isBlog={false} price={"۲.۹۰۰.۰۰۰"} />
+        <Widget
+          url={P1}
+          title={"عینک آفتابی Avery Carbon"}
+          isBlog={false}
+          price={"۲.۹۰۰.۰۰۰"}
+        />
+        <Widget
+          url={P4}
+          title={"ساعت Rey Legacy Leather Cognac"}
+          isBlog={false}
+          price={"۲.۹۰۰.۰۰۰"}
+        />
+        <Widget
+          url={P3}
+          title={"کوله پشتی Masao Lotus"}
+          isBlog={false}
+          price={"۲.۹۰۰.۰۰۰"}
+        />
+        <Widget
+          url={P2}
+          title={"ساعت Rey Legacy Leather Cognac"}
+          isBlog={false}
+          price={"۲.۹۰۰.۰۰۰"}
+        />
       </Container>
     </Wrapper>
   );

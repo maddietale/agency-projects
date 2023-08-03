@@ -23,12 +23,10 @@ const Container = styled.div`
   background-image: url(${Lines});
   position: relative;
 `;
-
 const Image = styled.img`
 position: absolute;
 top: 1;
 `;
-
 const Box = styled.div`
   width: 350px;
   height: 95%;

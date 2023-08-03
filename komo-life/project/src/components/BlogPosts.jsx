@@ -11,36 +11,27 @@ import styled from "styled-components";
 // GRID
 const Wrapper = styled.div`
   display: grid;
+  grid-row-end: 56px 408px;
   grid-template-columns: 1120px;
-  height: 568px;
+  height: 544px;
+  margin: 56px 0 0 0;
   justify-content: center;
   align-items: flex-end;
 `;
-// BOX
-const Container = styled.div`
-  width: 100%;
-  height: 408px;
-  display: flex;
-  overflow: scroll;
-  align-items: center;
-`;
+// Title
 const Info = styled.div`
   width: 100%;
-  height: 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 const Right = styled.div`
-  width: 269px;
-  height: 56px;
   display: flex;
   gap: 16px;
   align-items: center;
+  overflow: scroll;
 `;
 const Left = styled.div`
-  width: 156px;
-  height: 32px;
   display: flex;
   gap: 16px;
   align-items: center;
@@ -58,25 +49,32 @@ const Text = styled.span`
 const Arrow = styled.img`
   cursor: pointer;
 `;
+// BOX
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+`;
 
 const BlogPosts = () => {
   return (
     <Wrapper>
       <Info>
         <Right>
-          <img src={Blog} />
+          <img src={Blog} alt="blog"/>
           <Title>مطالب وبلاگ کومولایف</Title>
         </Right>
         <Left>
           <Text>مشاهده مطالب بیشتر</Text>
-          <Arrow src={Icon} />
+          <Arrow src={Icon} alt="arrow"/>
         </Left>
       </Info>
       <Container>
-        <Widget url={P10} title={"مطلب اول"} isBlog={true} />
-        <Widget url={P11} title={"مطلب دوم"} isBlog={true} />
-        <Widget url={P12} title={"مطلب سوم"} isBlog={true} />
-        <Widget url={P13} title={"مطلب چهارم"} isBlog={true} />
+        <Widget url={P11} title={"آیین گشایش شعبه جدید کومولایف: کومولایف سانا"} isBlog={true} />
+        <Widget url={P10} title={"درباره زمان ارسال سفارشات در روزهای پایانی سال"} isBlog={true} />
+        <Widget url={P13} title={"سری Komono NEXT: جدیدترین تجربه جسورانه کومونو"} isBlog={true} />
+        <Widget url={P12} title={"هشت سالگی کومولایف در کنار شما"} isBlog={true} />
       </Container>
     </Wrapper>
   );

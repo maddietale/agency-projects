@@ -11,19 +11,14 @@ import styled from "styled-components";
 // GRID
 const Wrapper = styled.div`
   display: grid;
+  grid-row-end: 56px 408px;
   grid-template-columns: 1120px;
-  height: 568px;
+  height: 544px;
+  margin: 56px 0 0 0;
   justify-content: center;
   align-items: flex-end;
 `;
-// BOX
-const Container = styled.div`
-  width: 100%;
-  height: 408px;
-  display: flex;
-  overflow: scroll;
-  align-items: center;
-`;
+// Title
 const Info = styled.div`
   width: 100%;
   height: 56px;
@@ -32,15 +27,12 @@ const Info = styled.div`
   align-items: center;
 `;
 const Right = styled.div`
-  width: 358px;
-  height: 56px;
   display: flex;
   gap: 16px;
   align-items: center;
+  overflow: scroll;
 `;
 const Left = styled.div`
-  width: 156px;
-  height: 32px;
   display: flex;
   gap: 16px;
   align-items: center;
@@ -58,42 +50,49 @@ const Text = styled.span`
 const Arrow = styled.img`
   cursor: pointer;
 `;
+// BOX
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  align-items: center;
+`;
 
 const PopularGlasses = () => {
   return (
     <Wrapper>
       <Info>
         <Right>
-          <img src={Glasses} />
+          <img src={Glasses} alt="glass" />
           <Title>محبوب‌ترین عینک‌های کومولایف</Title>
         </Right>
         <Left>
           <Text>مشاهده عینک‌های بیشتر</Text>
-          <Arrow src={Icon} />
+          <Arrow src={Icon} alt="arrow" />
         </Left>
       </Info>
       <Container>
         <Widget
           url={P6}
-          title={"عینک اول"}
+          title={"عینک آفتابی Avery Carbon"}
           isBlog={false}
           price={"۲.۹۰۰.۰۰۰"}
         />
         <Widget
           url={P1}
-          title={"عینک دوم"}
+          title={"عینک آفتابی Avery Carbon"}
           isBlog={false}
           price={"۲.۹۰۰.۰۰۰"}
         />
         <Widget
           url={P3}
-          title={"عینک سوم"}
+          title={"عینک آفتابی Avery Carbon"}
           isBlog={false}
           price={"۲.۹۰۰.۰۰۰"}
         />
         <Widget
           url={P7}
-          title={"عینک چهارم"}
+          title={"عینک آفتابی Avery Carbon"}
           isBlog={false}
           price={"۲.۹۰۰.۰۰۰"}
         />

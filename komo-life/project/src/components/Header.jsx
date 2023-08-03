@@ -3,11 +3,11 @@ import { useState } from "react";
 import TextLogo from "../images/TextLogo.svg";
 import Arrow from "../images/header/Arrow.svg";
 import HoverArrow from "../images/header/HoverArrow.svg";
-import Search from "../images/header/Search.svg";
+import SearchIcon from "../images/header/Search.svg";
 import HoverSearch from "../images/header/HoverSearch.svg";
-import User from "../images/header/User.svg";
+import UserIcon from "../images/header/User.svg";
 import HoverUser from "../images/header/HoverUser.svg";
-import Basket from "../images/header/Basket.svg";
+import BasketIcon from "../images/header/Basket.svg";
 // STYLE
 import styled from "styled-components";
 // GRID
@@ -39,11 +39,15 @@ const Navbar = styled.div`
   align-items: center;
   gap: 24px;
 `;
-const Navbar__items = styled.a.attrs((props) => ({
+const Items = styled.a.attrs((props) => ({
   href: props.url || "/",
   onClick: (e) => e.preventDefault(),
 }))`
+  font-family: "On-Semi";
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: var(--black-one);
   cursor: pointer;
   &:hover {
@@ -64,7 +68,7 @@ const Box = styled.div`
   align-items: center;
   gap: 24px;
 `;
-const Box__search = styled.div`
+const Search = styled.div`
   width: 182px;
   height: 40px;
   display: flex;
@@ -73,12 +77,13 @@ const Box__search = styled.div`
   gap: 8px;
   border: 1px solid var(--main-black);
   background-color: var(--black-five);
+  font-family: "On-Semi" !important;
   cursor: pointer;
   &:hover {
     color: var(--main-black);
   }
 `;
-const Box__Basket = styled.div`
+const Basket = styled.div`
   width: 125px;
   height: 40px;
   display: flex;
@@ -88,6 +93,7 @@ const Box__Basket = styled.div`
   color: var(--main-white);
   border: 1px solid var(--main-black);
   background-color: var(--main-black);
+  font-family: "On-Semi" !important;
   cursor: pointer;
   &:hover {
     background-color: var(--black-one);
@@ -104,43 +110,43 @@ const Header = () => {
     <Wrapper>
       <Container>
         <Navbar>
-          <Navbar__items
+          <Items
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
           >
             محصولات کومولایف{" "}
             <Image src={hover ? HoverArrow : Arrow} alt="Down" />
-          </Navbar__items>
-          <Navbar__items
+          </Items>
+          <Items
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
           >
             شعب کومولایف <Image src={hover ? HoverArrow : Arrow} alt="Down" />
-          </Navbar__items>
-          <Navbar__items>درباره ما</Navbar__items>
-          <Navbar__items>تماس با ما</Navbar__items>
+          </Items>
+          <Items>درباره ما</Items>
+          <Items>تماس با ما</Items>
         </Navbar>
         <Logo>
           <Image src={TextLogo} alt="KomoLife" />
         </Logo>
         <Box>
-          <Box__search
+          <Search
             onMouseEnter={() => setSearchHover(true)}
             onMouseLeave={() => setSearchHover(false)}
           >
-            <Image src={searchHover ? HoverSearch : Search} alt="Search" />
+            <Image src={searchHover ? HoverSearch : SearchIcon} alt="Search" />
             دنبال چه محصولی هستی؟
-          </Box__search>
+          </Search>
           <Image
             onMouseEnter={() => setUserHover(true)}
             onMouseLeave={() => setUserHover(false)}
-            src={userHover ? HoverUser : User}
+            src={userHover ? HoverUser : UserIcon}
             alt="User"
           />
-          <Box__Basket>
+          <Basket>
             سبد خرید
-            <Image src={Basket} alt="Basket" />
-          </Box__Basket>
+            <Image src={BasketIcon} alt="Basket" />
+          </Basket>
         </Box>
       </Container>
     </Wrapper>
