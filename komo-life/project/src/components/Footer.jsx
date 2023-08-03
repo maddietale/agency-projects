@@ -1,19 +1,189 @@
+// IMG
+import ImgLogo from "../images/ImgLogo.svg";
+import Pay from "../images/footer/Pay.svg";
+import Location from "../images/footer/Location.svg";
+import Email from "../images/footer/Email.svg";
+import Call from "../images/footer/Call.svg";
+import Arrow from "../images/footer/Arrow.svg";
+import Heart from "../images/footer/Heart.svg";
 // STYLE
 import styled from "styled-components";
 
+const Wrapper = styled.div`
+  width: 100%;
+  height: 648px;
+  margin: 10rem 0 0 0;
+  background-color: var(--main-black);
+`;
+
 const Container = styled.div`
   width: 100%;
-  height: 200px;
+  height: 600px;
+`;
+
+const Brand = styled.div`
+  width: 100%;
+  height: 290px;
   text-align: center;
-  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+const Logo = styled.img`
+  width: 80px;
+  height: 80px;
+  margin: 0 0 1rem 0;
+`;
+const Slogan = styled.span`
+  width: 632px;
+  display: block;
+  font-size: 24px;
+  color: var(--main-white);
+`;
+
+const Links = styled.div`
+  width: 100%;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Right = styled.div`
+  flex: 2;
+  height: 100%;
+  color: var(--main-white);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 5% 0 0;
+`;
+const Button = styled.button`
+  width: 272px;
+  height: 35px;
+  background-color: var(--main-white);
+  border: solid 1px var(--main-black);
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 0 24px 0;
+  &:hover {
+    background-color: var(--black-four);
+  }
+`;
+const Info = styled.span`
+  max-width: 380px;
+  display: block;
+  font-size: 18px;
+  margin: 16px 0 0 0;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+`;
+
+const Center = styled.div`
+  flex: 1;
+  height: 100%;
+  color: var(--main-white);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+`;
+const Title = styled.span`
+  font-size: 24px;
+  margin: 0 0 1.5rem 0;
+`;
+const Link = styled.span`
+  font-size: 18px;
+  margin: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+`;
+
+const Left = styled.div`
+  flex: 1;
+  height: 100%;
+  color: var(--main-white);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+`;
+
+const Copyright = styled.div`
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-white);
 `;
 
 const Footer = () => {
-    return (
-        <Container>
-            hi, im footer.
-        </Container>
-    );
+  return (
+    <Wrapper>
+      <Container>
+        <Brand>
+          <Logo src={ImgLogo} alt="Logo" />
+          <Slogan>
+            معنایی که در تمام این سال‌ها عملا به مجموعه کومولایف انسجام بخشیده
+            است:
+          </Slogan>
+          <Slogan>
+            “فضایی مینیمال، جوان، شهری و آوانگارد که دیزاین به عنوان عنصر مرکزی
+            در آن حضوری پررنگ دارد..”
+          </Slogan>
+        </Brand>
+        <Links>
+          <Right>
+            <Button>من رو به نزدیک‌ترین نمایندگی کومولایف ببر!</Button>
+            <Info>
+              <img src={Location} alt="Location" />
+              آدرس دفتر مرکزی: تهران، میدان آرژانتین، خیابان زاگرس، پلاک۶، واحد۲
+              (لطفا برای هماهنگی، از طریق راه‌های ارتباطی ما را مطلع کنید. دفتر
+              مرکزی برای ملاقات های کاری است و برای خرید، به نمایندگی‌ها مراجعه
+              کنید.)
+            </Info>
+            <Info>
+              <img src={Email} alt="Email" />
+              info@komolife.ir
+            </Info>
+            <Info>
+              <img src={Call} alt="Call" />
+              ۰۲۱ - ۸۸۸۸۳۰۷۷
+            </Info>
+          </Right>
+          <Center>
+            <Title>لینک‌های کاربردی</Title>
+            <Link>
+              مشاهده اطلاعات نمایندگی‌ها <img src={Arrow} alt="arrow" />
+            </Link>
+            <Link>
+              درخواست ثبت نمایندگی کومولایف <img src={Heart} alt="heart" />
+            </Link>
+            <Link>
+              خدمات گارانتی کومولایف <img src={Arrow} alt="arrow" />
+            </Link>
+            <Link>
+              تماس با کومولایف <img src={Arrow} alt="arrow" />
+            </Link>
+            <Link>
+              درباره کومولایف <img src={Arrow} alt="arrow" />
+            </Link>
+            <Link>
+              وبلاگ کومولایف <img src={Arrow} alt="arrow" />
+            </Link>
+          </Center>
+          <Left>
+            <img src={Pay} />
+          </Left>
+        </Links>
+      </Container>
+      <Copyright>کلیه حقوق این سایت متعلق به کومولایف است.</Copyright>
+    </Wrapper>
+  );
 };
 
 export default Footer;
